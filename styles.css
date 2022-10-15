@@ -99,7 +99,8 @@ html, body {
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 120px;
-    gap: 10%;
+    width: 100%;
+    gap: 5%;
 }
 
 .info-container {
