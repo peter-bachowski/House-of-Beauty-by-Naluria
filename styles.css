@@ -1,40 +1,38 @@
 html, body {
     margin: 0px;
     padding: 0px;
-    font-family: 'futura-pt', 'Light Roboto';
+    font-family: 'Roboto';
     display: flex;
     flex-direction: column;
     justify-content: center;
     max-width: 100%;
+    box-sizing: border-box;
+
 }
 
 .header-content, .footer{
-    
     background-color: #1F2937;
     color: #F9FAF8;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
+
 }
 
 .header-content {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/Makeup-header.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/Makeup-header.jpg);
     background-size: 100% 100%;
-}
-
-.footer {
-    height: 70px;
-    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .logo-and-links {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
     width: 100%;
-
+    margin-bottom: 20px;
+    font-family: 'Italiana';
 }
 
 .logo {
@@ -45,34 +43,30 @@ html, body {
 
 .header-content {
     width: 100%;
-    height: 500px;
+    height: 600px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
-    align-items:center;
-    gap: 10%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto';
 }
 
-.image-container, .content-left {
+.content-info {
     max-width: 40%;
     min-width: 300px;
-
-}
-
-.image-container {
-    filter: brightness(100%);
 }
 
 .title {
-    font-size: 48px;
-    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
 }
 
 .subtext {
     margin-bottom: 8px;
     font-size: 18px;
     color: #E5E7EB;
+    text-align: center;
 }
 
 .information {
@@ -91,13 +85,15 @@ html, body {
     font-weight: 900;
     padding-top: 50px;
     padding-bottom: 50px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Italiana';
 }
 
 .info-main-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 120px;
     width: 100%;
     gap: 5%;
 }
@@ -114,8 +110,6 @@ html, body {
 .info-box {
     height: 200px;
     width: 200px;
-    border: 3px solid #3882F6;
-    border-radius: 10px;
     margin-bottom: 10px;
 }
 
@@ -156,9 +150,8 @@ html, body {
 .action-container {
     display: flex;
     justify-content: space-between;
-    background-color: #3882F6;
-    border-radius: 10px;
-    color:#F9FAF8;
+    background-color: #E5E7EB;
+    color:#1F2937;
     padding: 50px 100px;
     display: flex;
     gap: 20px;
@@ -171,6 +164,24 @@ html, body {
     font-weight: 900px;
 }
 
+.footer {
+    height: 70px;
+    justify-content: center;
+    font-family: 'Roboto';
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+#credit {
+    font-size: 12px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 0%;
+}
+
 ul {
     list-style-type: none;
     display: flex;
@@ -179,13 +190,11 @@ ul {
 }
 
 button {
-
     background-color: white;
     font-weight: 700;
     padding: 6px 32px;
-    border-style: none;
-    border-width: 2px;
-    border-color: black;
+    border: 2px solid black;
+    font-family: 'Italiana';
 }
 
 a {
@@ -195,11 +204,5 @@ a {
     font-size: 24px;
 }
 
-#credit {
-    font-size: 12px;
-    font-weight: 700;
-    position: absolute;
-    bottom: 0%;
-    right: 0%;
-}
+
 
