@@ -26,6 +26,14 @@ html, body {
     flex-direction: column;
 }
 
+.teens-header-content {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./images/Ria-and-teens.jpg);
+    background-size: 100% 200%;
+    background-position: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
 .logo-and-links {
     display: flex;
     justify-content: space-around;
@@ -64,7 +72,7 @@ html, body {
     text-align: center;
 }
 
-#gallery-title {
+#link-title {
     font-size: 72px;
     text-align: center;
 }
