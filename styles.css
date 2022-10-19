@@ -27,7 +27,7 @@ html, body {
     margin: -20px;
 }
 
-.header-content {
+.header-content, .gallery-header-content, .teens-header-content, .about-header-content, .contact-header-content {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/Makeup-header.jpg);
     background-size: 100% 100%;
     background-position: center;
@@ -44,13 +44,17 @@ html, body {
     text-align: center;
     color: white;
 }
-
+.gallery-header-content {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/indonesia1.png);
+}
 .teens-header-content {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./images/Ria-and-teens.jpg);
-    background-size: 100% 200%;
-    background-position: center;
-    flex-wrap: wrap;
-    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/indonesia1.png);
+}
+.about-header-content {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/indonesia1.png);
+}
+.contact-header-content {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/indonesia1.png);
 }
 
 .content-info {
@@ -58,14 +62,15 @@ html, body {
     min-width: 300px;
 }
 
-.title {
-    font-size: 36px;
+.title, #link-title {
+    font-size: 48px;
     margin: 20px;
+    text-align: center;  
+    font-family: 'Italiana';
 }
 
 #link-title {
     font-size: 72px;
-    text-align: center;
 }
 
 .subtext {
