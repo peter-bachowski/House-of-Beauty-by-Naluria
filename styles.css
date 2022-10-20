@@ -133,7 +133,7 @@ html, body {
 
 .info-main-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
@@ -171,6 +171,7 @@ html, body {
     height: auto;
     width: 100%;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .action-area {
