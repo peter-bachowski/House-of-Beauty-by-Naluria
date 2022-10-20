@@ -135,6 +135,7 @@ html, body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    flex-direction: row;
     width: 100%;
     gap: 5%;
 }
@@ -152,11 +153,11 @@ html, body {
 .photo-container {
     color: #ba835e;
     display: flex;
-    width: 100%;
     flex-direction: column;
     align-items: center;
     font-size: 18px;
     text-align: center;
+    width: 40%;
 }
 
 .info-box {
@@ -186,7 +187,7 @@ html, body {
     justify-content: space-around;
     background-color: #E5E7EB;
     color:#1F2937;
-    padding: 50px 100px;
+    padding: 10% 100px;
     gap: 20px;
     flex-wrap: wrap;
     width: 100%;
