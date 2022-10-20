@@ -44,7 +44,7 @@ html, body {
     color: white;
 }
 .gallery-header-content {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/indonesia1.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/gallery-background.jpg);
 }
 .teens-header-content {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/Ria-and-teens.jpg);
