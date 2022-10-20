@@ -180,6 +180,7 @@ html, body {
     align-items: center;
     padding-left: 10%;
     padding-right: 10%;
+    text-align: center;
 }
 
 .action-container {
@@ -187,7 +188,7 @@ html, body {
     justify-content: space-around;
     background-color: #E5E7EB;
     color:#1F2937;
-    padding: 10% 100px;
+    padding: 10% 10%;
     gap: 20px;
     flex-wrap: wrap;
     width: 100%;
