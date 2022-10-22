@@ -1,10 +1,12 @@
 window.onload = () => {
-  // (A) GET LIGHTBOX & ALL .ZOOMD IMAGES
+  //GET LIGHTBOX & ALL .ZOOMD IMAGES
   let all = document.getElementsByClassName("zoomD"),
     lightbox = document.getElementById("lightbox");
+  
+  let signUpSheet = document.getElementbyClass("btn");
 
-  // (B) CLICK TO SHOW IMAGE IN LIGHTBOX
-  // * SIMPLY CLONE INTO LIGHTBOX & SHOW
+  //CLICK TO SHOW IMAGE IN LIGHTBOX
+  //CLONE INTO LIGHTBOX & SHOW
   if (all.length > 0) {
     for (let i of all) {
       i.onclick = () => {
@@ -17,7 +19,7 @@ window.onload = () => {
     }
   }
 
-  // (C) CLICK TO CLOSE LIGHTBOX
+  //CLICK TO CLOSE LIGHTBOX
   lightbox.onclick = () => {
     lightbox.className = "";
   };
