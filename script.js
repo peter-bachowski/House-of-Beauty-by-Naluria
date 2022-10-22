@@ -3,8 +3,6 @@ window.onload = () => {
   let all = document.getElementsByClassName("zoomD"),
     lightbox = document.getElementById("lightbox");
   
-  let signUpSheet = document.getElementbyClass("btn");
-
   //CLICK TO SHOW IMAGE IN LIGHTBOX
   //CLONE INTO LIGHTBOX & SHOW
   if (all.length > 0) {
