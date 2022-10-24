@@ -22,3 +22,7 @@ window.onload = () => {
     lightbox.className = "";
   };
 };
+
+
+
+

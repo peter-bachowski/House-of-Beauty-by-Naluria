@@ -28,13 +28,11 @@ html, body {
 
 .header-content, .gallery-header-content, .teens-header-content, .about-header-content, .contact-header-content {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/Makeup-header.jpg);
-    background-size: 100% 100%;
+    background-size: 150% auto;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
     height: 600px;
-    max-height: 800px;
-    min-height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,7 +60,7 @@ html, body {
 }
 
 .title, #link-title {
-    font-size: 68px;
+    font-size: 48px;
     margin: 20px;
     text-align: center;  
     font-family: 'Italiana';
@@ -74,7 +72,7 @@ html, body {
 
 .subtext {
     margin-bottom: 8px;
-    font-size: 36px;
+    font-size: 24px;
 }
 
 .quote-area {
@@ -156,7 +154,7 @@ html, body {
     align-items: center;
     font-size: 18px;
     text-align: center;
-    width: 200px;
+    width: 180px;
 }
 
 .info-box {
@@ -289,6 +287,14 @@ a {
   object-fit: cover;
 }
 
+#box {
+    resize: both;
+    border: solid;
+    background-color: green;
+    height: 400px;
+    width: 100%;
+    box-sizing: border-box;
+}
 
 
 
