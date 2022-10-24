@@ -83,13 +83,15 @@
 
 
   <script>
-    function showWidth( ele, w ) {
-      console.log( "The width for the " + ele + " is " + w + "px." );
-    }
-
     $("#home").click(function() {
       document.getElementById("home").style.height = "200px";
     })
+
+    let headerWidth = $("home").width();
+
+    if(headerWidth <= 400){
+      document.getElementById("home").style.height = "200px";
+    }
   </script>
 
 </body>
