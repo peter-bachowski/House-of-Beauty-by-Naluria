@@ -83,15 +83,20 @@
 
 
   <script>
-    $("#home").click(function() {
+    function checkWidth(){
+      let width = $("#home").width();
+      if(width <= 550){
       document.getElementById("home").style.height = "200px";
-    })
-
-    let headerWidth = $("home").width();
-
-    if(headerWidth <= 400){
-      document.getElementById("home").style.height = "200px";
+      console.log("The height has been changed.");
+      }
+      else if(width > 550){
+        document.getElementById("home").style.height = "600px";
+        console.log("The height has been changed.");
+      }
     }
+
+    setInterval(checkWidth(), 500);
+
   </script>
 
 </body>
