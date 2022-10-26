@@ -23,6 +23,19 @@ window.onload = () => {
   };
 };
 
+window.addEventListener("resize", 
+function(){
+  let width = $("#home").width();
+  if(width <= 550){
+  document.getElementById("home").style.height = "200px";
+  console.log("The height has been changed.");
+  }
+  else if(width > 550){
+    document.getElementById("home").style.height = "600px";
+    console.log("The height has been changed.");
+  }
+}
+);
 
 
 

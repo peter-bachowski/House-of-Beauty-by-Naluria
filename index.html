@@ -10,6 +10,7 @@
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Italiana" />
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto" />
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="script.js"></script>
 </head>
 
 <body>
@@ -82,22 +83,7 @@
 
 
 
-  <script>
-    function checkWidth(){
-      let width = $("#home").width();
-      if(width <= 550){
-      document.getElementById("home").style.height = "200px";
-      console.log("The height has been changed.");
-      }
-      else if(width > 550){
-        document.getElementById("home").style.height = "600px";
-        console.log("The height has been changed.");
-      }
-    }
 
-    setInterval(checkWidth(), 500);
-
-  </script>
 
 </body>
 
