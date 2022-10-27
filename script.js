@@ -1,4 +1,13 @@
 window.onload = () => {
+  //checks width of header div then sets height of div
+  let width = $("#header").width();
+  if(width <= 550){
+  document.getElementById("header").style.height = "300px";
+  }
+  else if(width > 550){
+    document.getElementById("header").style.height = "600px";
+  }
+
   //GET LIGHTBOX & ALL .ZOOMD IMAGES
   let all = document.getElementsByClassName("zoomD"),
     lightbox = document.getElementById("lightbox");
@@ -16,7 +25,6 @@ window.onload = () => {
       };
     }
   }
-
   //CLICK TO CLOSE LIGHTBOX
   lightbox.onclick = () => {
     lightbox.className = "";
@@ -25,14 +33,12 @@ window.onload = () => {
 
 window.addEventListener("resize", 
 function(){
-  let width = $("#home").width();
+  let width = $("#header").width();
   if(width <= 550){
-  document.getElementById("home").style.height = "200px";
-  console.log("The height has been changed.");
+  document.getElementById("header").style.height = "300px";
   }
   else if(width > 550){
-    document.getElementById("home").style.height = "600px";
-    console.log("The height has been changed.");
+    document.getElementById("header").style.height = "600px";
   }
 }
 );

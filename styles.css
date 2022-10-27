@@ -46,6 +46,7 @@ html, body {
 }
 .teens-header-content {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/Ria-and-teens.jpg);
+    background-size: 100% auto;
 }
 .about-header-content {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/about-background.jpg);
