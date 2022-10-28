@@ -43,10 +43,12 @@ html, body {
 }
 .gallery-header-content {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/gallery-background.jpg);
+    background-size: 100% auto;
 }
 .teens-header-content {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/Ria-and-teens.jpg);
     background-size: 100% auto;
+    background-position: 50% 30%;
 }
 .about-header-content {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/about-background.jpg);
@@ -286,15 +288,6 @@ a {
   max-width: 700px;
   min-width: 400px;
   object-fit: cover;
-}
-
-#box {
-    resize: both;
-    border: solid;
-    background-color: green;
-    height: 400px;
-    width: 100%;
-    box-sizing: border-box;
 }
 
 

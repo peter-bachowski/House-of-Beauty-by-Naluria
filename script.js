@@ -1,11 +1,15 @@
 window.onload = () => {
   //checks width of header div then sets height of div
   let width = $("#header").width();
+  let elementHeader = document.getElementById("header");
   if(width <= 550){
-  document.getElementById("header").style.height = "300px";
+  elementHeader.style.height = "300px";
   }
-  else if(width > 550){
-    document.getElementById("header").style.height = "600px";
+  else if((550 < width) && (width <= 920)){
+    elementHeader.style.height = "400px";
+  }
+  else if(width > 920){
+    elementHeader.style.height = "600px";
   }
 
   //GET LIGHTBOX & ALL .ZOOMD IMAGES
@@ -32,15 +36,25 @@ window.onload = () => {
 };
 
 window.addEventListener("resize", 
-function(){
-  let width = $("#header").width();
-  if(width <= 550){
-  document.getElementById("header").style.height = "300px";
+  function(){
+    let width = $("#header").width();
+    let elementHeader = document.getElementById("header");
+    if(width <= 550){
+    elementHeader.style.height = "300px";
+    }
+    else if((550 < width) && (width <= 920)){
+      elementHeader.style.height = "400px";
+    }
+    else if(width > 920){
+      elementHeader.style.height = "600px";
+    }
   }
-  else if(width > 550){
-    document.getElementById("header").style.height = "600px";
+);
+
+document.getElementsByClassName("btn").addEventListener("click",
+  function(){
+
   }
-}
 );
 
 
