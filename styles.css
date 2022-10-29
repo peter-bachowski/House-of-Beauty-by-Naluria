@@ -131,6 +131,13 @@ html, body {
     font-family: 'Italiana';
 }
 
+#contact-info-title {
+    font-weight: 550;
+    font-size: 48px;
+    padding-bottom: none;
+    margin-top: 50px;
+}
+
 .info-main-container {
     display: flex;
     justify-content: center;
@@ -148,6 +155,10 @@ html, body {
     align-items: center;
     font-size: 18px;
     text-align: center;
+}
+
+#location, #address{
+    font-size: 36px;
 }
 
 .photo-container {
@@ -170,7 +181,6 @@ html, body {
     height: auto;
     width: 100%;
     margin-bottom: 10px;
-    cursor: pointer;
 }
 
 .action-area {
@@ -220,13 +230,6 @@ li:hover {
     color: black;
 }
 
-#credit {
-    font-size: 12px;
-    font-weight: 700;
-    position: absolute;
-    bottom: 0%;
-}
-
 ul {
     list-style-type: none;
     display: flex;
@@ -251,6 +254,20 @@ a {
     font-size: 24px;
 }
 
+a,button,.photo-box{
+    cursor: pointer;
+}
+
+hr{
+    margin-top: 50px; margin-bottom: 50px;
+    width: 100%;
+}
+
+p {
+    display: flex;
+    align-items: center;
+}
+
 /*LIGHTBOX BACKGROUND */
 #lightbox {
   /*COVERS FULLSCREEN */
@@ -272,6 +289,12 @@ a {
  
   /*SHOW/HIDE ANIMATION */
   transition: opacity ease 0.4s;
+}
+
+#signUpSheetDiv {
+    background-color: #F9FAF8;
+    width: 50%;
+    height: auto;
 }
  
 /*TOGGLE VISIBILITY */

@@ -1,5 +1,5 @@
 window.onload = () => {
-  //checks width of header div then sets height of div
+  //checks width of header div then sets height of header div
   let width = $("#header").width();
   const elementHeader = document.getElementById("header");
   if (width <= 550) {
@@ -12,12 +12,30 @@ window.onload = () => {
     elementHeader.style.height = "600px";
   }
 
-  //GET LIGHTBOX & ALL .ZOOMD IMAGES
-  let all = document.getElementsByClassName("zoomD"),
-    lightbox = document.getElementById("lightbox");
+    //GET LIGHTBOX & ALL .ZOOMD IMAGES
+    let all = document.getElementsByClassName("zoomD"),
+    lightbox = document.getElementById("lightbox"), 
+    buttons = document.getElementsByClassName("btn");
 
-  //CLICK TO SHOW IMAGE IN LIGHTBOX
-  //CLONE INTO LIGHTBOX & SHOW
+    //this function creates a lightbox when the buttons are pressed
+    if (buttons.length > 0) {
+      for (let i of buttons) {
+        i.onclick = () => {
+          console.log("It works!");
+          //let signUpSheet = document.getElementById("signUpSheetDiv");
+          //clone.className = "";
+          lightbox.innerHTML = "";
+          //lightbox.appendChild(signUpSheet);
+          lightbox.className = "show";
+        };
+      }
+    }
+    //CLICK TO CLOSE LIGHTBOX
+    lightbox.onclick = () => {
+      lightbox.className = "";
+    };
+
+  // creates lightbox for images
   if (all.length > 0) {
     for (let i of all) {
       i.onclick = () => {
@@ -51,26 +69,3 @@ window.addEventListener("resize",
   }
 );
 
-const btnElements = document.getElementsByClassName("btn");
-
-function myFunction() {
-  console.log("It works!");
-  let lightbox = document.getElementById("lightbox");
-  //CLICK TO SHOW IMAGE IN LIGHTBOX
-  //CLONE INTO LIGHTBOX & SHOW
-  if (all.length > 0) {
-    for (let i of all) {
-      i.onclick = () => {
-        let clone = i.cloneNode();
-        clone.className = "";
-        lightbox.innerHTML = "";
-        lightbox.appendChild(clone);
-        lightbox.className = "show";
-      };
-    }
-  }
-  //CLICK TO CLOSE LIGHTBOX
-  lightbox.onclick = () => {
-    lightbox.className = "";
-  };
-}
