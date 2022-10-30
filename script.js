@@ -12,34 +12,30 @@ window.onload = () => {
     elementHeader.style.height = "600px";
   }
 
-    //GET LIGHTBOX & ALL .ZOOMD IMAGES
-    let all = document.getElementsByClassName("zoomD"),
-    lightbox = document.getElementById("lightbox"), 
-    buttons = document.getElementsByClassName("btn");
+  //GET LIGHTBOX & ALL .ZOOMD IMAGES
+  let all = document.getElementsByClassName("zoomD"),
+  lightbox = document.getElementById("lightbox"), 
+  buttons = document.getElementsByClassName("btn"), 
+  signUpSheet = document.createElement("signUpSheetDiv");
+  signUpSheet.id = "signUpSheetDiv";
 
-    //this function creates a lightbox when the buttons are pressed
-    if (buttons.length > 0) {
-      for (let i of buttons) {
-        i.onclick = () => {
-          console.log("It works!");
-          //let signUpSheet = document.getElementById("signUpSheetDiv");
-          //clone.className = "";
-          lightbox.innerHTML = "";
-          //lightbox.appendChild(signUpSheet);
-          lightbox.className = "show";
-        };
+  //creates a lightbox when the buttons are pressed
+  if (buttons.length > 0) {
+    for (let i of buttons) {
+      i.onclick = () => {
+        console.log("It works!");
+        lightbox.innerHTML = "";
+        lightbox.appendChild(signUpSheet);
+        lightbox.className = "show";
       }
     }
-    //CLICK TO CLOSE LIGHTBOX
-    lightbox.onclick = () => {
-      lightbox.className = "";
-    };
+  }
 
   // creates lightbox for images
   if (all.length > 0) {
-    for (let i of all) {
-      i.onclick = () => {
-        let clone = i.cloneNode();
+    for (let j of all) {
+      j.onclick = () => {
+        let clone = j.cloneNode();
         clone.className = "";
         lightbox.innerHTML = "";
         lightbox.appendChild(clone);
