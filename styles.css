@@ -159,6 +159,7 @@ html, body {
 
 #location, #address{
     font-size: 36px;
+    text-align: center;
 }
 
 .photo-container {
@@ -292,9 +293,10 @@ p {
 }
 
 #signUpSheetDiv {
-    background-color: #F9FAF8;
-    width: 80%;
-    height: 80%;
+  background-color: #F9FAF8;
+  width: 80%;
+  height: 80%;
+  visibility: hidden;
 }
  
 /*TOGGLE VISIBILITY */

@@ -14,10 +14,11 @@ window.onload = () => {
 
   //GET LIGHTBOX & ALL .ZOOMD IMAGES
   let all = document.getElementsByClassName("zoomD"),
-  lightbox = document.getElementById("lightbox"), 
-  buttons = document.getElementsByClassName("btn"), 
-  signUpSheet = document.createElement("signUpSheetDiv");
-  signUpSheet.id = "signUpSheetDiv";
+    lightbox = document.getElementById("lightbox"),
+    buttons = document.getElementsByClassName("btn"),
+  //signUpSheet = document.createElement("signUpSheetDiv");
+
+  //signUpSheet.id = "signUpSheetDiv";
 
   //creates a lightbox when the buttons are pressed
   if (buttons.length > 0) {
