@@ -144,7 +144,7 @@ html, body {
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
-    gap: 5%;
+    gap: 10px;
 }
 
 .info-container {
@@ -296,7 +296,9 @@ p {
   background-color: #F9FAF8;
   width: 80%;
   height: 80%;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
  
 /*TOGGLE VISIBILITY */
