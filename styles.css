@@ -271,34 +271,46 @@ p {
 
 /*LIGHTBOX BACKGROUND */
 #lightbox {
-  /*COVERS FULLSCREEN */
-  position: fixed; z-index: 999;
+  position: fixed;
   top: 0; left: 0;
-  width: 100vw; height: 100vh;
- 
-  /*BACKGROUND */
+  width: 100vw; 
+  height: 100vh;
   background: rgba(0, 0, 0, 0.5);
- 
-  /*CENTER IMAGE ON SCREEN */
   display: flex;
   align-items: center;
   justify-content: center;
- 
-  /*HIDDEN BY DEFAULT */
   visibility: hidden;
   opacity: 0;
- 
-  /*SHOW/HIDE ANIMATION */
   transition: opacity ease 0.4s;
 }
 
 #signUpSheetDiv {
-  background-color: #F9FAF8;
+  background-color:#1F2937;
   width: 80%;
-  height: 80%;
-  display: flex;
+  height: 60%;
+  padding: 20px;
+  display: none;
   align-items: center;
   justify-content: center;
+}
+
+.bookingRow {
+    display: flex;
+    flex-direction: column;
+}
+
+.bookingContainer {
+    background-color: #F9FAF8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.option {
+    width: 50px;
 }
  
 /*TOGGLE VISIBILITY */
