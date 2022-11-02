@@ -49,13 +49,11 @@ window.onload = () => {
     if(lightbox.className == "showImage"){
       lightbox.className = "";
     }
-    else if(lightbox.className == "showSignUp"){
-      closeButton.onclick = () => {
-        lightbox.className = "";
-        signUpSheet.style.display = "none";
-      };
-    }
   }
+  closeButton.onclick = () => {
+    lightbox.className = "";
+    signUpSheet.style.display = "none";
+  };
 };
 
 window.addEventListener("resize",
@@ -63,7 +61,7 @@ window.addEventListener("resize",
     let width = $("#header").width();
     const elementHeader = document.getElementById("header");
     if (width <= 550) {
-      elementHeader.style.height = "300px";
+      elementHeader.style.height = "250px";
     }
     else if ((550 < width) && (width <= 920)) {
       elementHeader.style.height = "400px";
