@@ -16,7 +16,8 @@ window.onload = () => {
   let all = document.getElementsByClassName("zoomD"),
     lightbox = document.getElementById("lightbox"),
     buttons = document.getElementsByClassName("btn"),
-    signUpSheet = document.getElementById("signUpSheetDiv");
+    signUpSheet = document.getElementById("signUpSheetDiv"),
+    closeButton = document.getElementById("close-button");
 
   //creates a lightbox when the buttons are pressed
   if (buttons.length > 0) {
@@ -25,7 +26,7 @@ window.onload = () => {
         console.log("It works!");
         lightbox.innerHTML = "";
         lightbox.appendChild(signUpSheet);
-        lightbox.className = "show";
+        lightbox.className = "showSignUp";
         signUpSheet.style.display = "flex";
       }
     }
@@ -39,15 +40,22 @@ window.onload = () => {
         clone.className = "";
         lightbox.innerHTML = "";
         lightbox.appendChild(clone);
-        lightbox.className = "show";
+        lightbox.className = "showImage";
       };
     }
   }
   //CLICK TO CLOSE LIGHTBOX
   lightbox.onclick = () => {
-    lightbox.className = "";
-    signUpSheet.style.display = "none";
-  };
+    if(lightbox.className == "showImage"){
+      lightbox.className = "";
+    }
+    else if(lightbox.className == "showSignUp"){
+      closeButton.onclick = () => {
+        lightbox.className = "";
+        signUpSheet.style.display = "none";
+      };
+    }
+  }
 };
 
 window.addEventListener("resize",
