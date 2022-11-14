@@ -12,14 +12,14 @@ window.onload = () => {
     elementHeader.style.height = "600px";
   }
 
-  //GET LIGHTBOX & ALL .ZOOMD IMAGES
+  //get all lightbox and .zoomD images
   let all = document.getElementsByClassName("zoomD"),
     lightbox = document.getElementById("lightbox"),
     buttons = document.getElementsByClassName("btn"),
     signUpSheet = document.getElementById("signUpSheetDiv"),
     closeButton = document.getElementById("close-button");
 
-  //creates a lightbox when the buttons are pressed
+  //creates a lightbox when the sign up buttons are pressed
   if (buttons.length > 0) {
     for (let i of buttons) {
       i.onclick = () => {
@@ -46,7 +46,7 @@ window.onload = () => {
   }
   //CLICK TO CLOSE LIGHTBOX
   lightbox.onclick = () => {
-    if(lightbox.className == "showImage"){
+    if (lightbox.className == "showImage") {
       lightbox.className = "";
     }
   }
