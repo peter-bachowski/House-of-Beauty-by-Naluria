@@ -1,6 +1,6 @@
 window.onload = () => {
   //checks width of header div then sets height of header div
-  let width = $("#header").width();
+  let width = $("#header").width();//checks the width at any given time using jquery
   const elementHeader = document.getElementById("header");
   if (width <= 550) {
     elementHeader.style.height = "300px";
@@ -55,7 +55,8 @@ window.onload = () => {
     signUpSheet.style.display = "none";
   };
 };
-
+//creates a listener on the window and sets the height
+//of the header div depending on what width the current page is
 window.addEventListener("resize",
   function() {
     let width = $("#header").width();
