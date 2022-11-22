@@ -246,6 +246,7 @@ button {
     padding: 6px 32px;
     border: 2px solid black;
     font-family: 'Italiana';
+    color: inherit;
 }
 
 a {
